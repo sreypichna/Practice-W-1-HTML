@@ -1,0 +1,9 @@
+SOURCE PAGE TO DESTINATION PAGE = HYPERLINK
+1. action.html TO cinema.html = <a href="../cinema.html">
+2. home.html TO songs.html = <a href="./music/songs.html">
+3. help.html TO action.html	= <a href="./movies/action_movies/action.html">
+4. cinema.html TO help.html = <a href="../help.html">
+5. action.html TO home.html = <a href="../../home.html">
+6. cinema.html TO action.html = <a href="./action_movies/action.html">
+7. songs.html TO action.html = <a href="./movies/action_movies/action.html">
+8. action.html TO songs.html = <a href="../songs.html">
