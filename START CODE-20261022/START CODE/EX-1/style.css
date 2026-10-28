@@ -1,0 +1,50 @@
+body {
+    background: grey;
+    font-family: sans-serif;
+}
+
+div {
+    background-color: white;
+    color: black;
+    margin: 30px 100px;
+    padding: 30px;
+    border-radius: 20PX;
+    row-gap: 30px;
+}
+
+button {
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#bt1 {
+    color: white;
+    background-color: darkcyan;
+}
+
+#bt2 {
+    color: white;
+    background-color: darkgoldenrod;
+}
+
+#bt3 {
+    color: white;
+    background-color: darkmagenta;
+}
+
+#bt1:hover {
+    color: white;
+    background-color: brown;
+}
+
+#bt2:hover {
+    color: black;
+    background-color: greenyellow;
+}
+
+#bt3:hover {
+    color: white;
+    background-color: blue;
+}
