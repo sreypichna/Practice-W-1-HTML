@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCISE 4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        display: flex;
+        height: 100vh;
+    }
+
+    .sidebar {
+        width: 250px;
+        background-color: white;
+        color: black;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .menu div {
+        margin-bottom: 15px;
+    }
+
+    .menu a {
+        color: black;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu a i {
+        margin-right: 10px;
+    }
+
+    .main {
+        flex: 1;
+        background-color: #f5f5f5;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chat-messages {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 50px;
+
+    }
+
+    .chat-messages input {
+        flex: 1;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 12px;
+
+    }
+
+    .chat-messages button {
+        background-color: ghostwhite;
+        color: black;
+        padding: 10px 15px;
+        margin-left: 10px;
+        border-radius: 12px;
+    }
+</style>
+
+<body>
+    <!-- ChatGPT dashboard layout -->
+    <aside class="sidebar">
+        <div class="logo">ChatGPT</div>
+        <div class="menu">
+            <div><a href="#"><i class="fa-solid fa-pencil"></i> New Chat</a></div>
+            <div><a href="#"><i class="fa-solid fa-clock-rotate-left"></i> History</a></div>
+            <div><a href="#"><i class="fa-solid fa-sliders"></i> Settings</a></div>
+            <div><a href="#"><i class="fa-solid fa-ellipsis"></i> Help</a></div>
+        </div>
+    </aside>
+    <main class="main">
+        <div class="chat-messages">
+            <input type="text" placeholder="Ask ChatGPT..." />
+            <button><a href="#"><i class="fa-regular fa-paper-plane"></i></a></button>
+        </div>
+    </main>
+</body>
+
+</html>
