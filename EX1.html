@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+</head>
+<style>
+    .Box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .Item {
+        background-color: aqua;
+        padding: 30px;
+        text-align: center;
+        border: 1px solid black;
+    }
+
+    @media (max-width: 768px) {
+        .Box {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 480px) {
+        .Box {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<body>
+    <div class="Box">
+        <div class="Item">Item 1</div>
+        <div class="Item">Item 2</div>
+        <div class="Item">Item 3</div>
+        <div class="Item">Item 4</div>
+        <div class="Item">Item 5</div>
+        <div class="Item">Item 6</div>
+        <div class="Item">Item 7</div>
+        <div class="Item">Item 8</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+</head>
+
+<body>
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: black;
+        }
+
+        .logo {
+            font-size: larger;
+            color: white;
+        }
+
+        .Menu {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: white;
+        }
+
+        div {
+            text-decoration: none;
+            color: white;
+        }
+
+        .threeLine {
+            display: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        @media (max-width:768px) {
+            .threeLine {
+                display: block;
+            }
+
+            .Menu {
+                display: none;
+            }
+        }
+    </style>
+    </head>
+
+    <body>
+        <nav>
+            <div class="logo">Logo</div>
+            <div class="Menu">
+                <div>Home</div>
+                <div>About</div>
+                <div>Services</div>
+                <div>Contact</div>
+            </div>
+            <div class="threeLine">&#9776;</div>
+        </nav>
+    </body>
+
+</html>

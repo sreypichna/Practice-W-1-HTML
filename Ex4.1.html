@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX4.1</title>
+</head>
+<style>
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        height: 100vh;
+        padding: 20px;
+    }
+
+    .content {
+        display: flex;
+        height: 300px;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        font-size: xx-large;
+    }
+
+    .big {
+        display: inline;
+        background-color: greenyellow;
+    }
+
+    .small {
+        display: none;
+        background-color: red;
+    }
+
+    @media (max-width:350px) {
+        .small {
+            display: inline;
+        }
+
+        .big {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <span class="small">I'm SMALL 😢</span>
+            <span class="big">I'm BIG 😱</span>
+        </div>
+    </div>
+</body>
+
+</html>
